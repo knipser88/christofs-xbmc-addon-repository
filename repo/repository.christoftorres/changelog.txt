@@ -1,0 +1,2 @@
+[B]v1.0.0[/B] (February 2013) :
+  - initial release
