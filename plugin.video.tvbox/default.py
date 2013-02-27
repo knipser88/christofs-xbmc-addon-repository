@@ -10,7 +10,7 @@ addon = xbmcaddon.Addon(id='plugin.video.tvbox')
 
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 
-root = 'https://raw.github.com/christofTorres/TV-Box/master/countries.xml'
+root = 'https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/countries.xml'
 
 def COUNTRIES():
         xmlfile = urllib2.urlopen(root)
