@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.tvbox"
+       name="TV Box"
+       version="1.0.2"
+       provider-name="Christof Torres">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.simplejson"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">TV Box - The unique tv experience.</summary>
+        <description lang="en">Watch the best tv-channels on your XBMC as live stream. Tv-channels from Austria, France, Germany, Luxembourg, Portugal, Switzerland and the United Kingdom.</description>
+		<summary lang="de">TV Box - Das einzigartige TV-Elebnis.</summary>
+        <description lang="de">Die besten TV-Sender, auf deinem XBMC als live Stream anschauen. TV-Sender aus Österreich, Frankreich, Deutschland, Luxemburg, Portugal, Schweiz und dem Vereinigten Königreich.</description>
+    </extension>
+</addon>
