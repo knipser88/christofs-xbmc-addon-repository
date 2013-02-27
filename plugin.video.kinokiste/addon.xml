@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kinokiste"
+       name="KinoKiste"
+       version="2.0.0"
+       provider-name="Christof Torres">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.simplejson"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">KinoKiste.com      -      Streaming the best movies online.</summary>
+        <description lang="en">With this add-on you can turn your XBMC into an instant free on-demand media-center. Watch all the videos from www.kinokiste.com, including new released movies, blockbusters, tv shows and a lot more. And if that all would not be already amazing, ... it's all in german!</description>
+		<summary lang="de">KinoKiste.com - Die Besten Filme einfach Online Streamen.</summary>
+        <description lang="de">Mit diesem add-on kannst du dein XBMC in ein konstenloses on-demand media-center verwandeln. Schaue dir alle videos aus www.kinokiste.com an, inbegriffen sind aktuelle Kinofilme, Blockbuster, Serien und vieles mehr. Und wenn das alles nicht auch noch schon großartig genug wäre, ist auch noch alles auf Deutsch!</description>
+    </extension>
+</addon>
