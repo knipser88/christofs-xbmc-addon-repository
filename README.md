@@ -1,5 +1,5 @@
-Christof's XBMC addon repository
-================================
+Christof's XBMC add-on repository
+=================================
 
 Welcome to my XBMC repository!
 
