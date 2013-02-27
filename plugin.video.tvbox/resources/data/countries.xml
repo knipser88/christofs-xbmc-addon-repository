@@ -3,31 +3,31 @@
 <countries>
     <country
         name="AUSTRIA"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_at.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_at.xml">
     </country>
     <country
         name="GERMANY"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_de.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_de.xml">
     </country>
     <country
         name="FRANCE"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_fr.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_fr.xml">
     </country>
     <country
         name="LUXEMBOURG"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_lu.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_lu.xml">
     </country>
     <country
         name="PORTUGAL"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_pt.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_pt.xml">
     </country>
     <country
         name="SWITZERLAND"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_ch.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_ch.xml">
     </country>
     <country
         name="UNITED KINGDOM"
-        xml="https://raw.github.com/christofTorres/TV-Box/master/channels_uk.xml">
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_uk.xml">
     </country>
 </countries>
 </data>
