@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.ChristofTorres" name="Christof's XBMC add-ons" version="1.0.0" provider-name="Christof Torres">
+    <extension point="xbmc.addon.repository" name="Christof's XBMC Addon Repository">
+        <info compressed="false"></info>
+        <checksum></checksum>
+        <datadir zip="true"></datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install Christof's add-ons</summary>
+        <description>Download and install add-ons by Christof Torres</description>
+        <platform>all</platform>
+    </extension>
+</addon>
