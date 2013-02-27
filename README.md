@@ -1,4 +1,6 @@
-Christofs-XBMC-Repo
-===================
+Christof's XBMC addon repository
+================================
 
-XBMC Repository with some video and audio plugins.
+Welcome to my XBMC repository!
+
+This repository contains some nice video and music add-ons for your XBMC.
