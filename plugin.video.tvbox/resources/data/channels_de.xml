@@ -57,7 +57,7 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=294">
     </channel>
     <channel
-        name="RTLNITRO"
+        name="RTL NITRO"
         url="http://www.tv-kino.net/stream/live/de/rtlnitro.html"
         epg="">
     </channel>
