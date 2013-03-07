@@ -57,6 +57,16 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=294">
     </channel>
     <channel
+        name="RTLNITRO"
+        url="http://www.tv-kino.net/stream/live/de/rtlnitro.html"
+        epg="">
+    </channel>
+    <channel
+        name="SAT1 GOLD"
+        url="http://www.tv-kino.net/stream/live/de/sat1gold.html"
+        epg="">
+    </channel>
+    <channel
         name="3SAT"
         url="http://www.tv-kino.net/stream/live/de/3sat.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=11">
@@ -95,6 +105,26 @@
         name="DELUXE MUSIC"
         url="rtmp://push.flash3.ipercast.net:1935/deluxemusic.tv-live/ playpath=web_850.stream swfUrl=http://www.onlinesat-tv.com/channel/flashplayer2.swf pageUrl=http://www.onlinesat-tv.com/online.php?tv=Deluxe_Music&amp;id=752 swfVfy=true live=true"
         epg="http://i.teleboy.ch/programm/station.php?station_id=177">
+    </channel>
+    <channel
+        name="WDR"
+        url="http://www.tv-kino.net/stream/live/de/wdr.html"
+        epg="">
+    </channel>
+    <channel
+        name="MDR"
+        url="http://www.tv-kino.net/stream/live/de/mdr.html"
+        epg="">
+    </channel>
+    <channel
+        name="SWR"
+        url="http://www.tv-kino.net/stream/live/de/swr.html"
+        epg="">
+    </channel>
+    <channel
+        name="N24"
+        url="http://www.tv-kino.net/stream/live/de/n24.html"
+        epg="">
     </channel>
     <channel
         name="NTV"
