@@ -59,12 +59,12 @@
     <channel
         name="RTL NITRO"
         url="http://www.tv-kino.net/stream/live/de/rtlnitro.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=289">
     </channel>
     <channel
         name="SAT1 GOLD"
         url="http://www.tv-kino.net/stream/live/de/sat1gold.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=301">
     </channel>
     <channel
         name="3SAT"
@@ -109,22 +109,22 @@
     <channel
         name="WDR"
         url="http://www.tv-kino.net/stream/live/de/wdr.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=30">
     </channel>
     <channel
         name="MDR"
         url="http://www.tv-kino.net/stream/live/de/mdr.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=31">
     </channel>
     <channel
         name="SWR"
         url="http://www.tv-kino.net/stream/live/de/swr.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=29">
     </channel>
     <channel
         name="N24"
         url="http://www.tv-kino.net/stream/live/de/n24.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=44">
     </channel>
     <channel
         name="NTV"
