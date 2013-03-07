@@ -7,6 +7,11 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=1">
     </channel>
     <channel
+        name="ZDF"
+        url="http://www.tv-kino.net/stream/live/de/zdf-hd.html"
+        epg="">
+    </channel>
+    <channel
         name="SAT1"
         url="http://www.tv-kino.net/stream/live/de/sat1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=10">
