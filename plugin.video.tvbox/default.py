@@ -55,7 +55,7 @@ def TVCHANNELS(xml):
                                 flashvars = re.compile('file=(.+?)&amp;.+?streamer=(.+?)&amp;').findall(link)
                                 for playpath,rtmp in flashvars:
                                         rtmp = rtmp[0:len(rtmp)-1]
-                                        rtmp = rtmp+' app=stream swfUrl=http://stream.tv-kino.net/player.swf playpath='+playpath+' live=true'
+                                        rtmp = rtmp+' swfUrl=http://stream.tv-kino.net/player.swf playpath='+playpath+' pageurl='+url+' live=true swfvfy=true'
                         else:
                                 rtmp = url
                         thumbnail = addon.getAddonInfo('path')+'/resources/media/'+name.lower()+'.jpg'

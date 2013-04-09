@@ -1,3 +1,14 @@
+[B]v1.0.3[/B] (April 2013) :
+  - fixed a bug with the channels from Germany
+  - added new channels (7 channels)
+        ZDF
+        RTL NITRO
+        SAT1 GOLD
+        WDR
+        MDR
+        SWR
+        N24
+
 [B]v1.0.2[/B] (February 2013) :
   - improved EPG support and EPG layout
   - removed some non-working channels (11 channels)
