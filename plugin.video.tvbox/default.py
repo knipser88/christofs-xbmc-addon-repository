@@ -2,7 +2,7 @@
 
 #TV Box - by Christof Torres 2012 - 2013.
 
-import urllib,urllib2,re,datetime,xbmcplugin,xbmcgui,xbmcaddon
+import urllib,urllib2,re,datetime,os.path,xbmcplugin,xbmcgui,xbmcaddon
 
 from xml.dom import minidom
 
@@ -11,26 +11,45 @@ addon = xbmcaddon.Addon(id='plugin.video.tvbox')
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 
 root = 'https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/countries.xml'
-
 def COUNTRIES():
         xmlfile = urllib2.urlopen(root)
-        output = open(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1],'wb')
-        output.write(xmlfile.read())
-        output.close()
-        xmldoc = minidom.parse(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1])
-        country_list = xmldoc.getElementsByTagName('country')
-        for country in country_list:
-                xml = country.attributes['xml'].value.encode("utf-8")
-                xmlfile = urllib2.urlopen(xml)
-                xml = addon.getAddonInfo('path')+'/resources/data/'+xml.split('/')[-1]
-                output = open(xml,'wb')
+        error_server = 0
+        if (os.path.exists(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1])):
+                xmldocserver = minidom.parse(xmlfile)
+        else:
+                output = open(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1],'wb')
                 output.write(xmlfile.read())
                 output.close()
-                xmldoc = minidom.parse(xml)
-                channel_list = xmldoc.getElementsByTagName('channel')
-                name = '[B]'+country.attributes['name'].value.encode("utf-8")+'[/B] ('+str(len(channel_list))+')'
-                thumbnail = addon.getAddonInfo('path')+'/resources/media/'+country.attributes['name'].value.encode("utf-8").lower()+'.jpg'
-                addDir(name, xml, 1, thumbnail, len(country_list))
+                xmldocserver = minidom.parse(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1])
+                error_server = -1
+        xmldoclocal = minidom.parse(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1])
+        country_list_local = xmldoclocal.getElementsByTagName('country')
+        index = -1; error_local = 0
+        for country_server in xmldocserver.getElementsByTagName('country'):
+                index += 1
+                country_found = False
+                for country_local in country_list_local:
+                        if (country_server.attributes['name'].value == country_local.attributes['name'].value):
+                                country_found = True
+                if (index < len(country_list_local)):
+                        timestamp_server = country_server.attributes['timestamp'].value.encode("utf-8")
+                        timestamp_local = country_list_local[index].attributes['timestamp'].value.encode("utf-8")
+                xml = country_server.attributes['xml'].value.encode("utf-8")
+                if (not country_found or not os.path.exists(addon.getAddonInfo('path')+'/resources/data/'+xml.split('/')[-1]) or timestamp_server != timestamp_local):
+                        xmlfile = urllib2.urlopen(xml)
+                        output = open(addon.getAddonInfo('path')+'/resources/data/'+xml.split('/')[-1],'wb')
+                        output.write(xmlfile.read())
+                        output.close()
+                        error_local = -1
+                xml = addon.getAddonInfo('path')+'/resources/data/'+xml.split('/')[-1]
+                name = '[B]'+country_server.attributes['name'].value.encode("utf-8")+'[/B] ('+str(len(minidom.parse(xml).getElementsByTagName('channel')))+')'
+                thumbnail = addon.getAddonInfo('path')+'/resources/media/'+country_server.attributes['name'].value.encode("utf-8").lower()+'.jpg'
+                addDir(name, xml, 1, thumbnail, 0)
+        if (error_server != -1 and error_local == -1):
+                xmlfile = urllib2.urlopen(root)
+                output = open(addon.getAddonInfo('path')+'/resources/data/'+root.split('/')[-1],'wb')
+                output.write(xmlfile.read())
+                output.close()
                 
 
 def TVCHANNELS(xml):
@@ -42,7 +61,10 @@ def TVCHANNELS(xml):
                 name = channel.attributes['name'].value.encode("utf-8")
                 url = channel.attributes['url'].value.encode("utf-8")
                 try:
-                        epg = get_epg(channel.attributes['epg'].value.encode("utf-8"))
+                        if (addon.getSetting("epgsupport") == "true"):
+                                epg = get_epg(channel.attributes['epg'].value.encode("utf-8"))
+                        else:
+                                epg = ''
                 except:
                         epg = ''
                 try:
@@ -53,15 +75,14 @@ def TVCHANNELS(xml):
                                 link = response.read()
                                 response.close()
                                 flashvars = re.compile('file=(.+?)&amp;.+?streamer=(.+?)&amp;').findall(link)
-                                for playpath,rtmp in flashvars:
-                                        rtmp = rtmp[0:len(rtmp)-1]
+                                for playpath, rtmp in flashvars:
                                         rtmp = rtmp+' swfUrl=http://stream.tv-kino.net/player.swf playpath='+playpath+' pageurl='+url+' live=true swfvfy=true'
                         else:
                                 rtmp = url
                         thumbnail = addon.getAddonInfo('path')+'/resources/media/'+name.lower()+'.jpg'
                         addLink(number, name, epg, rtmp, thumbnail, len(channel_list))
                 except:
-                        print "Unexpected error: "+url
+                        print "Unexpected Error: "+url
 
 
 def get_epg(url):

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category>
+        <setting label="32001" type="bool" id="epgsupport" default="true"/>
+    </category>
+</settings>

@@ -1,3 +1,8 @@
+[B]v1.0.4[/B] (May 2013) :
+  - improved performance when loading the countries
+  - added the possibility to disable/enable EPG support for faster loading
+  - fixed a bug with the playback of the channels from Germany
+
 [B]v1.0.3[/B] (April 2013) :
   - fixed a bug with the channels from Germany
   - added new channels (7 channels)
