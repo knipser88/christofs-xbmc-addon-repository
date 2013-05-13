@@ -29,7 +29,7 @@
     <channel
         name="PRO7"
         url="http://www.tv-kino.net/stream/live/de/pro7.html"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=162">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=9">
     </channel>
     <channel
         name="KABEL1"
