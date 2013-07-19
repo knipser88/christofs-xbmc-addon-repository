@@ -108,17 +108,17 @@
     </channel>
     <channel
         name="WDR"
-        url="http://www.tv-kino.net/stream/live/de/wdr.html"
+        url="http://live-tv.to/television_channels/19"
         epg="http://i.teleboy.ch/programm/station.php?station_id=30">
     </channel>
     <channel
         name="MDR"
-        url="http://www.tv-kino.net/stream/live/de/mdr.html"
+        url="http://live-tv.to/television_channels/28"
         epg="http://i.teleboy.ch/programm/station.php?station_id=31">
     </channel>
     <channel
         name="SWR"
-        url="http://www.tv-kino.net/stream/live/de/swr.html"
+        url="http://live-tv.to/television_channels/30"
         epg="http://i.teleboy.ch/programm/station.php?station_id=29">
     </channel>
     <channel
