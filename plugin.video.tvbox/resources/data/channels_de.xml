@@ -124,7 +124,7 @@
     <channel
         name="NDR"
         url="http://live-tv.to/television_channels/7"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=28">
     </channel>
     <channel
         name="N24"
@@ -149,22 +149,22 @@
     <channel
         name="DAS VIERTE"
         url="http://live-tv.to/television_channels/42"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=145">
     </channel>
     <channel
         name="PHOENIX"
         url="http://live-tv.to/television_channels/43"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=46">
     </channel>
     <channel
         name="JOIZ"
         url="http://live-tv.to/television_channels/34"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=279">
     </channel>
     <channel
         name="ANIXE"
         url="http://live-tv.to/television_channels/5"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=175">
     </channel>
 </channels>
 </data>
