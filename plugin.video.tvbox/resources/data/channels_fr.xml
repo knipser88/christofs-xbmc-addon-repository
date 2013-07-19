@@ -28,22 +28,22 @@
     </channel>
     <channel
         name="GULLI"
-        url="http://live-tv.to/television_channels/"
-        epg="">
+        url="http://live-tv.to/television_channels/113"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=270">
     </channel>
     <channel
         name="GRANDLILLE"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/115"
         epg="">
     </channel>
     <channel
         name="ALSACE20"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/114"
         epg="">
     </channel>
     <channel
         name="AIR"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/116"
         epg="">
     </channel>
 </channels>
