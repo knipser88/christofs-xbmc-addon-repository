@@ -11,5 +11,25 @@
         url="http://www.tv-kino.net/stream/live/at/orf2.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=7">
     </channel>
+    <channel
+        name="ORFSPORT"
+        url="http://live-tv.to/television_channels/"
+        epg="">
+    </channel>
+    <channel
+        name="ATV"
+        url="http://live-tv.to/television_channels/"
+        epg="">
+    </channel>
+    <channel
+        name="3 PLUS"
+        url="http://live-tv.to/television_channels/"
+        epg="">
+    </channel>
+    <channel
+        name="SERVUSTV"
+        url="http://live-tv.to/television_channels/"
+        epg="">
+    </channel>
 </channels>
 </data>
