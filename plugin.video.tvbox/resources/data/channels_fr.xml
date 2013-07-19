@@ -28,22 +28,22 @@
     </channel>
     <channel
         name="GULLI"
-        url=""
+        url="http://live-tv.to/television_channels/"
         epg="">
     </channel>
     <channel
         name="GRANDLILLE"
-        url=""
+        url="http://live-tv.to/television_channels/"
         epg="">
     </channel>
     <channel
         name="ALSACE20"
-        url=""
+        url="http://live-tv.to/television_channels/"
         epg="">
     </channel>
     <channel
         name="AIR"
-        url=""
+        url="http://live-tv.to/television_channels/"
         epg="">
     </channel>
 </channels>
