@@ -26,5 +26,25 @@
         url="http://akamedia10.lsops.net/live/smil:euronews_fr.smil/playlist.m3u8"
         epg="http://i.teleboy.ch/programm/station.php?station_id=196">
     </channel>
+    <channel
+        name="GULLI"
+        url=""
+        epg="">
+    </channel>
+    <channel
+        name="GRANDLILLE"
+        url=""
+        epg="">
+    </channel>
+    <channel
+        name="ALSACE20"
+        url=""
+        epg="">
+    </channel>
+    <channel
+        name="AIR"
+        url=""
+        epg="">
+    </channel>
 </channels>
 </data>
