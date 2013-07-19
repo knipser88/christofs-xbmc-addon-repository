@@ -122,6 +122,11 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=29">
     </channel>
     <channel
+        name="NDR"
+        url="http://live-tv.to/television_channels/7"
+        epg="">
+    </channel>
+    <channel
         name="N24"
         url="http://www.tv-kino.net/stream/live/de/n24.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=44">
@@ -138,8 +143,28 @@
     </channel>
     <channel
         name="ZDFNEO"
-        url="http://www.tv-kino.net/stream/live/de/zdfneo.html"
+        url="http://live-tv.to/television_channels/33"
         epg="http://i.teleboy.ch/programm/station.php?station_id=121">
+    </channel>
+    <channel
+        name="DAS VIERTE"
+        url="http://live-tv.to/television_channels/42"
+        epg="">
+    </channel>
+    <channel
+        name="PHOENIX"
+        url="http://live-tv.to/television_channels/43"
+        epg="">
+    </channel>
+    <channel
+        name="JOIZ"
+        url="http://live-tv.to/television_channels/34"
+        epg="">
+    </channel>
+    <channel
+        name="ANIXE"
+        url="http://live-tv.to/television_channels/5"
+        epg="">
     </channel>
 </channels>
 </data>
