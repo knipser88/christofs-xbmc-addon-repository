@@ -12,6 +12,16 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=4">
     </channel>
     <channel
+        name="SFINFO"
+        url="http://live-tv.to/television_channels/38"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=5">
+    </channel>
+    <channel
+        name="3PLUS"
+        url="http://live-tv.to/television_channels/39"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=138">
+    </channel>
+    <channel
         name="RTSUN"
         url="http://www.tv-kino.net/stream/live/fr/rtsun.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=12">
@@ -20,6 +30,11 @@
         name="RTSDEUX"
         url="http://www.tv-kino.net/stream/live/fr/rtsdeux.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=13">
+    </channel>
+    <channel
+        name="TELEZURI"
+        url="http://live-tv.to/television_channels/29"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=72">
     </channel>
 </channels>
 </data>
