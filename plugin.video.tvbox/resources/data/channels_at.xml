@@ -13,22 +13,22 @@
     </channel>
     <channel
         name="ORFSPORT"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/96"
         epg="">
     </channel>
     <channel
         name="ATV"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/40"
         epg="">
     </channel>
     <channel
         name="3 PLUS"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/39"
         epg="">
     </channel>
     <channel
         name="SERVUSTV"
-        url="http://live-tv.to/television_channels/"
+        url="http://live-tv.to/television_channels/44"
         epg="">
     </channel>
 </channels>
