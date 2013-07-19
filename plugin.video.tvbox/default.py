@@ -11,6 +11,7 @@ addon = xbmcaddon.Addon(id='plugin.video.tvbox')
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 
 root = 'https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/countries.xml'
+
 def COUNTRIES():
         xmlfile = urllib2.urlopen(root)
         error_server = 0
@@ -93,11 +94,11 @@ def get_epg(url):
         response.close()
         if (url.find('http://i.teleboy.ch') <> -1):
                 now = link.split('<div id="showbox__0" class="showclass">')
-                epg = re.compile('<p class="show_title">(.+?)<br /><a href="/programm/detail.php\?const_id=.+?">(.+?)</a></p>').findall(now[1])
-                time = epg[0][0].decode("iso-8859-1")
-                time = time.encode("utf-8")
-                title = epg[0][1].decode("iso-8859-1")
+                epg = re.compile('<p class="show_title"><a href="/programm/detail.php\?const_id=.+?">(.+?)</a>(.+?)<br /></p>').findall(now[1])
+                title = epg[0][0].decode("iso-8859-1")
                 title = title.encode("utf-8") 
+                time = epg[0][1].decode("iso-8859-1")
+                time = time.encode("utf-8")
         elif (url.find('tele.rtl.lu') <> -1):
                 now = re.compile('<TR><TD class="highlight">(.+?)</TD><TD>&nbsp;<B><A HREF=".+?>(.+?)</A>.+?</B></TD></TR>').findall(link)
                 epg = re.compile('<TR><TD class="highlight">(.+?)</TD><TD>&nbsp;.*?<A HREF=".*?>(.+?)</A>.+?</TD></TR>').findall(link)
