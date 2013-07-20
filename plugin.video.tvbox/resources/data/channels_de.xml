@@ -138,7 +138,7 @@
     </channel>
     <channel
         name="EURONEWS"
-        url="http://akamedia10.lsops.net/live/smil:euronews_de.smil/playlist.m3u8"
+        url="http://hd1.lsops.net/live/smil:euronews_de.smil/playlist.m3u8"
         epg="http://i.teleboy.ch/programm/station.php?station_id=67">
     </channel>
     <channel
