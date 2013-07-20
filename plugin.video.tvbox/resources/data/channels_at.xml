@@ -12,7 +12,7 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=7">
     </channel>
     <channel
-        name="ORFSPORT"
+        name="ORFSPORT+"
         url="http://live-tv.to/television_channels/96"
         epg="http://i.teleboy.ch/programm/station.php?station_id=168">
     </channel>
