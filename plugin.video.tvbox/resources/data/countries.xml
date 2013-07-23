@@ -27,6 +27,11 @@
         timestamp="17/04/2013 00:00:00">
     </country>
     <country
+        name="SPAIN"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_es.xml"
+        timestamp="22/07/2013 14:02:00">
+    </country>
+    <country
         name="SWITZERLAND"
         xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_ch.xml"
         timestamp="20/07/2013 22:36:00">
