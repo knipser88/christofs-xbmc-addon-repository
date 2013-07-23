@@ -69,7 +69,7 @@ def TVCHANNELS(xml):
                 except:
                         epg = ''
                 try:
-                        if (url.find('www.tv-kino.net') != -1):
+                        if (url.find('rtmp') == -1 and url.find('m3u8') == -1):
                                 req = urllib2.Request(url)
                                 req.add_header('User-Agent', user_agent)
                                 response = urllib2.urlopen(req)
@@ -78,13 +78,6 @@ def TVCHANNELS(xml):
                                 flashvars = re.compile('file=(.+?)&amp;.+?streamer=(.+?)&amp;').findall(link)
                                 for playpath, rtmp in flashvars:
                                         rtmp = rtmp+' swfUrl=http://stream.tv-kino.net/player.swf playpath='+playpath+' pageurl='+url+' live=true swfvfy=true'
-                        elif (url.find('live-tv.to') != -1):
-                                req = urllib2.Request(url)
-                                req.add_header('User-Agent', user_agent)
-                                response = urllib2.urlopen(req)
-                                link = response.read()
-                                response.close()
-                                rtmp = re.compile('<video width="80%" src="(.+?)" controls="controls"></video>').findall(link)[0].replace("&amp;", "&")
                         else:
                                 rtmp = url
                         thumbnail = addon.getAddonInfo('path')+'/resources/media/'+name.lower()+'.jpg'
