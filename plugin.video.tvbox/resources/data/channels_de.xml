@@ -28,7 +28,7 @@
     </channel>
     <channel
         name="PRO7"
-        url="http://www.tv-kino.net/stream/live/de/pro7.html"
+        url="http://live-tv.to/television_channels/46"
         epg="http://i.teleboy.ch/programm/station.php?station_id=9">
     </channel>
     <channel
