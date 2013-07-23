@@ -2,39 +2,44 @@
 <data>
 <channels>
     <channel
-        name="ALJAZEERA"
-        url="http://aj.lsops.net/live/smil:aljazeer_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=148">
+        name="KISS TV"
+        url="http://live-tv.to/television_channels/119"
+        epg="">
     </channel>
     <channel
-        name="BBC WORLD NEWS"
-        url="http://akamedia2.lsops.net/live/bbcworld1_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=101">
+        name="TELERED 21"
+        url="http://live-tv.to/television_channels/120"
+        epg="">
     </channel>
     <channel
-        name="BLOOMBERG"
-        url="http://media4.lsops.net/live/smil:bloomber_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=150">
+        name="EUROSPORT"
+        url="http://live-tv.to/television_channels/124"
+        epg="">
     </channel>
     <channel
-        name="CNN INTERNATIONAL"
-        url="http://akamedia2.lsops.net/live/smil:cnn_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=50">
+        name="CBL CLASSIC HD"
+        url="http://live-tv.to/television_channels/123"
+        epg="">
     </channel>
     <channel
-        name="CNBC EUROPE"
-        url="http://akamedia2.lsops.net/live/smil:cnbc_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=131">
+        name="ANDALUCIA TELEVISION"
+        url="http://live-tv.to/television_channels/121"
+        epg="">
     </channel>
     <channel
-        name="EURONEWS"
-        url="http://akamedia10.lsops.net/live/smil:euronews_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=195">
+        name="TELEMADRID SAT"
+        url="http://live-tv.to/television_channels/118"
+        epg="">
     </channel>
     <channel
-        name="FRANCE24 ENGLISH"
-        url="http://media10.lsops.net/live/france24_en.smil/playlist.m3u8"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=149">
+        name="TVES"
+        url="http://live-tv.to/television_channels/125"
+        epg="">
+    </channel>
+    <channel
+        name="IB3"
+        url="http://live-tv.to/television_channels/117"
+        epg="">
     </channel>
 </channels>
 </data>
