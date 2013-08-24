@@ -8,7 +8,7 @@ path = addon.getAddonInfo('path')+'/resources/art/'
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 
 def CATEGORIES():
-        addDir('Kinofilme','http://www.kkiste.to/aktuelle-kinofilme/',1,path+'/aktuelle-kinofilme.jpg')
+        addDir('Kinofilme','http://www.kkiste.to/aktuelle-kinofilme/?page=1',1,path+'/aktuelle-kinofilme.jpg')
         addDir('Serien','http://www.kkiste.to/serien/',2,path+'/serien.jpg')
         addDir('Neu!','http://www.kkiste.to/neue-filme/',3,path+'/neue-filme.jpg')
         addDir('Filmlisten','http://www.kkiste.to/film-index/',4,path+'/film-index.jpg')
@@ -17,45 +17,42 @@ def CATEGORIES():
                         
 def INDEX(url):
         main_url = url
-        req = urllib2.Request(main_url)
+        req = urllib2.Request(url)
         req.add_header('User-Agent', user_agent)
         response = urllib2.urlopen(req)
         link = response.read()
         response.close()
-        menu = url[20:len(url)]
         pages = re.compile('<li><a href="\?page=.+?">(.+?)</a></li>').findall(link)
-        if (len(pages) != 0):
-            pages = int(pages[len(pages)-1])
-        else:
-            pages = 1
-        for i in range(1, (pages+1)):
-                page_url = main_url+'?page='+str(i)
-                req2 = urllib2.Request(page_url)
-                req2.add_header('User-Agent', user_agent)
-                response2 = urllib2.urlopen(req2)
-                link2 = response2.read()
-                response2.close()
-                match = re.compile('<a href="(.+?)" title="(.+?)" class="title">.+?</a>').findall(link2)
-                for url,name in match:
-                        try:
-                                url = 'http://www.kkiste.to'+url
-                                req3 = urllib2.Request(url)
-                                req3.add_header('User-Agent', user_agent)
-                                response3 = urllib2.urlopen(req3)
-                                link3 = response3.read()
-                                response3.close()
-                                match2 = re.compile('<img src="(.+?)" width="145" height="215" alt=".+?" />').findall(link3)
-                                thumbnail = 'http://www.kkiste.to'+match2[0]
-                                name = name[6:len(name)]
-                                name = name[0:name.find('Stream ansehen')-1]
-                                year = re.compile('Jahr:</span> (.+?)</p>').findall(link3) 
-                                name = name+' ('+year[0]+')'
-                                if (menu == '/serien/'):
-                                       addDir(name,url,8,thumbnail)
-                                else:
-                                       addDir(name,url,10,thumbnail)
-                        except:
-                                print 'Unexpected error: '+url
+        match = re.compile('<a href="(.+?)" title="(.+?)" class="title">.+?</a>').findall(link)
+        for url,name in match:
+                try:
+                        url = 'http://www.kkiste.to'+url
+                        req2 = urllib2.Request(url)
+                        req2.add_header('User-Agent', user_agent)
+                        response2 = urllib2.urlopen(req2)
+                        link2 = response2.read()
+                        response2.close()
+                        name = name[6:len(name)]
+                        name = name[0:name.find('Stream ansehen')-1]
+                        thumbnail = re.compile('<img src="(.+?)" width="145" height="215" alt=".+?" />').findall(link2)[0]
+                        director = re.compile('<p><span>von:</span> <a href=".+?">(.+?)</a>').findall(link2)[0]
+                        rating = re.compile('IMDB Rating:</span> <a href=".+?" target="_blank" title=".+?">(.+?)</a>').findall(link2)[0]
+                        year = re.compile('Jahr:</span> (.+?)</p>').findall(link2)[0] 
+                        plot = re.compile('<p id="kk-plot">(.+?)<span class="kk-ds">').findall(link2)[0].replace("<br>","\n").replace("<br />","\n").replace("&nbsp;"," ")
+                        actors = re.compile('<li><a href="/darsteller/.+?/" title=".+?">(.+?)</a></li>').findall(link2)
+                        cast = ''
+                        for actor in actors:
+                                cast = cast+actor+'\n'
+                        if (link2.find('class="seasonselect"') != -1):
+                                addSerie(name,url,thumbnail,director,rating,year,plot,cast)
+                        else:
+                                addMovie(name,url,thumbnail,director,rating,year,plot,cast)
+                except:
+                        print 'Unexpected error: '+url
+        last_page = pages[len(pages)-1]
+        current_page = main_url[46:len(main_url)]
+        if (current_page < last_page):
+                addDir('Folgende Seite >','http://www.kkiste.to/aktuelle-kinofilme/?page='+str(int(current_page)+1),1,'')
 
 def ALPHABETICINDEX(url):
         for filter_index in '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z':
@@ -74,7 +71,7 @@ def GENRESINDEX(url):
             addDir(genre,genre_url,1,path+'/genre.jpg')
 
 def SEARCH(url):
-        kb = xbmc.Keyboard('', 'www.kinokiste.com durchsuchen', False)
+        kb = xbmc.Keyboard('', 'KinoKiste durchsuchen', False)
         kb.doModal()
         if (kb.isConfirmed()) and (kb.getText() != ''):
                 search = kb.getText()
@@ -94,16 +91,21 @@ def SEARCH(url):
                         response2 = urllib2.urlopen(req2)
                         link2 = response2.read()
                         response2.close()
-                        match2 = re.compile('<img src="(.+?)" width="145" height="215" alt=".+?" />').findall(link2)
-                        thumbnail = 'http://www.kkiste.to'+match2[0]
                         name = name[6:len(name)]
                         name = name[0:name.find('Stream ansehen')-1]
-                        year = re.compile('Jahr:</span> (.+?)</p>').findall(link2) 
-                        name = name+' ('+year[0]+')'
+                        thumbnail = re.compile('<img src="(.+?)" width="145" height="215" alt=".+?" />').findall(link2)[0]
+                        director = re.compile('<p><span>von:</span> <a href=".+?">(.+?)</a>').findall(link2)[0]
+                        rating = re.compile('IMDB Rating:</span> <a href=".+?" target="_blank" title=".+?">(.+?)</a>').findall(link2)[0]
+                        year = re.compile('Jahr:</span> (.+?)</p>').findall(link2)[0]
+                        plot = re.compile('<p id="kk-plot">(.+?)<span class="kk-ds">').findall(link2)[0].replace("<br>","\n").replace("<br />","\n")
+                        actors = re.compile('<li><a href="/darsteller/.+?/" title=".+?">(.+?)</a></li>').findall(link2)
+                        cast = ''
+                        for actor in actors:
+                                cast = cast+actor+'\n'
                         if (link2.find('class="seasonselect"') != -1):
-                                addDir(name,url,8,thumbnail)
+                                addSerie(name,url,thumbnail,director,rating,year,plot,cast)
                         else:
-                                addDir(name,url,10,thumbnail)
+                                addMovie(name,url,thumbnail,director,rating,year,plot,cast)
                     except:
                         continue
         
@@ -115,8 +117,7 @@ def SEASON(url,name):
         response.close() 
         match = re.compile('<option value="(.+?)">Staffel .+?</option>').findall(link)
         for season_number in match:
-                name = 'Staffel '+season_number
-                addDir(name,url,9,path+'/staffel.jpg')
+                addDir(name+' - Staffel '+season_number,url,9,path+'/staffel.jpg')
 
 def EPISODE(url,name):
         main_url = url
@@ -170,75 +171,36 @@ def EPISODE(url,name):
                 
 def VIDEOLINKS(url,name):
         req = urllib2.Request(url)
-        req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+        req.add_header('User-Agent', user_agent)
         response = urllib2.urlopen(req)
-        link=response.read()
+        link = response.read()
         response.close()
-        
-        submenu=re.compile('<a class="submenu" href="#" onclick="(.+?);">(.+?)</a></li>').findall(link)
-        if (len(submenu) > 0):
-                for host,part in submenu:
-                        host = host[host.find('(')+1:host.find(')')]
-                        stream = url[0:24]+'/stream/'+url[25:len(url)]+'?h='+host
-                        
-                        req2 = urllib2.Request(stream)
-                        req2.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-                        response2 = urllib2.urlopen(req2)
-                        link2=response2.read()
-                        response2.close()
-
-                        match2=re.compile('<iframe src="(.+?)"').findall(link2)
-
-                        for eco_url in match2:
-                            eco_url = eco_url[0:23]+'/stream/'+eco_url[30:len(eco_url)]
-                            
-                            formdictionary = { 'ss' : '1' }
-                            params = urllib.urlencode(formdictionary)
-                            response3 = urllib2.urlopen(eco_url, params)
-                            link3 = response3.read()
-                            response3.close()
-                                
-                            match3=re.compile("var t=setTimeout\(\"lc\('([^']+)','([^']+)','.+?','.+?'\)\",(.+?)\);").findall(link3)
-                                
-                            for s,k,t in match3:
-                                next_url = 'http://www.ecostream.tv/object.php?s='+s+'&k='+k+'&t='+t
-                                
-                                req4 = urllib2.Request(next_url)
-                                req4.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-                                response4 = urllib2.urlopen(req4)
-                                link4=response4.read()
-                                response4.close()
-                                
-                                match4=re.compile('<param name="flashvars" value="file=(.*?)&').findall(link4)
-                                if (match4[0].find('%') != -1):
-                                    match4[0] = match4[0][0:match4[0].find('%')]
-                                addLink(name+' - '+part,match4[0],path+'/ecostream.jpg')
-        else:
-            match=re.compile('<div class="embedplayer">\n\t\t\t\t\t<a href="(.+?)" target="_blank">').findall(link)
-        
-            for eco_url in match:
-
-                formdictionary = { 'ss' : '1' }
+        parts = re.compile('<li class=".+?"><a href="(.+?)" target="_blank">Ecostream <small>(.+?)</small></a></li>').findall(link)
+        for part, part_number in parts:
+                formdictionary = { 'ss' : '1', 'sss' : '1' }
                 params = urllib.urlencode(formdictionary)
-                response2 = urllib2.urlopen(eco_url, params)
+                req2 = urllib2.Request(part, params)
+                req2.add_header('User-Agent', user_agent)
+                response2 = urllib2.urlopen(req2)
                 link2 = response2.read()
                 response2.close()
-
-                match2=re.compile("var t=setTimeout\(\"lc\('([^']+)','([^']+)','.+?','.+?'\)\",(.+?)\);").findall(link2)
-
-                for s,k,t in match2:
-                    next_url = 'http://www.ecostream.tv/object.php?s='+s+'&k='+k+'&t='+t
-
-                    req3 = urllib2.Request(next_url)
-                    req3.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-                    response3 = urllib2.urlopen(req3)
-                    link3=response3.read()
-                    response3.close()
-
-                    match3=re.compile('<param name="flashvars" value="file=(.*?)&').findall(link3)
-                    if (match3[0].find('%') != -1):
-                        match3[0] = match3[0][0:match3[0].find('%')]
-                    addLink(name,match3[0],path+'/ecostream.jpg')
+                match2 = re.compile("var t=setTimeout\(\"lc\('([^']+)','([^']+)','([^']+)','([^']+)'\)\",.+?\);").findall(link2)
+                for a,b,t,key in match2:
+                        url = 'http://www.ecostream.tv/lo/mq.php?s='+a+'&k='+b+'&t='+t+'&key='+key
+                        formdictionary2 = { 's': a, 'k' : b, 't' : t, 'key' : key }
+                        params2 = urllib.urlencode(formdictionary2)
+                        req3 = urllib2.Request(url, params2)
+                        req3.add_header('Referer', 'http://www.ecostream.tv')
+                        req3.add_header('X-Requested-With', 'XMLHttpRequest')
+                        response3 = urllib2.urlopen(req3)
+                        link3 = response3.read()
+                        response3.close()
+                        stream_url = re.compile('<param name="flashvars" value="file=(.*?)&').findall(link3)[0]
+                        stream_url = 'http://www.ecostream.tv'+stream_url
+                        if (len(parts) == 1):
+                                addLink(name+' - Ecostream',stream_url,path+'/ecostream.jpg')
+                        else:
+                                addLink(name+' - Ecostream '+part_number,stream_url,path+'/ecostream.jpg')
 
 def SERIELINKS(url,name):
         req = urllib2.Request(url)
@@ -294,16 +256,12 @@ def get_params():
                                 
         return param
 
-
-
-
 def addLink(name,url,iconimage):
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name } )
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
         return ok
-
 
 def addDir(name,url,mode,iconimage):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
@@ -312,7 +270,23 @@ def addDir(name,url,mode,iconimage):
         liz.setInfo( type="Video", infoLabels={ "Title": name } )
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
-        
+
+def addSerie(name,url,iconimage,director,rating,year,plot,cast):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode=8&name="+urllib.quote_plus(name)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name, "Director": director, "Rating": rating, "Year": year, "Plot": plot, "Cast": "test" } )
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        return ok
+
+def addMovie(name,url,iconimage,director,rating,year,plot,cast):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode=10&name="+urllib.quote_plus(name)
+        ok=True
+        name = name+' ('+year+')'
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name, "Director": director, "Rating": rating, "Year": year, "Plot": plot, "Cast": "test" } )
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        return ok
               
 params=get_params()
 url=None
