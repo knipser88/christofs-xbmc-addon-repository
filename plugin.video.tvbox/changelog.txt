@@ -1,3 +1,8 @@
+[B]v1.0.7[/B] (January 2014) :
+  - fixed broken channels
+  - improved performance when loading the EPG
+  - several minor bug fixes
+
 [B]v1.0.6[/B] (July 2013) :
   - added new channels to Austria (3 channels)
         ORFSPORT+

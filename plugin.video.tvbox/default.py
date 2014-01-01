@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#TV Box - by Christof Torres 2012 - 2013.
+#TV Box - by Christof Torres 2012 - 2014.
 
 import urllib,urllib2,re,datetime,os.path,xbmcplugin,xbmcgui,xbmcaddon
 
@@ -63,13 +63,14 @@ def TVCHANNELS(xml):
                 url = channel.attributes['url'].value.encode("utf-8")
                 try:
                         if (addon.getSetting("epgsupport") == "true"):
-                                epg = get_epg(channel.attributes['epg'].value.encode("utf-8"))
+                                if (url.find('megatv.to') == -1):
+                                       epg = get_epg(channel.attributes['epg'].value.encode("utf-8"))
                         else:
                                 epg = ''
                 except:
                         epg = ''
                 try:
-                        if (url.find('www.tv-kino.net') != -1):
+                        if (url.find('www.live-stream.tv') != -1):
                                 req = urllib2.Request(url)
                                 req.add_header('User-Agent', user_agent)
                                 response = urllib2.urlopen(req)
@@ -77,7 +78,7 @@ def TVCHANNELS(xml):
                                 response.close()
                                 flashvars = re.compile('file=(.+?)&amp;.+?streamer=(.+?)&amp;').findall(link)
                                 for playpath, rtmp in flashvars:
-                                        rtmp = rtmp+' swfUrl=http://stream.tv-kino.net/player.swf playpath='+playpath+' pageurl='+url+' live=true swfvfy=true'
+                                        rtmp = rtmp+' swfUrl=http://stream.live-stream.tv/player.swf playpath='+playpath+' pageurl='+url+' live=true swfvfy=true'
                         elif (url.find('megatv.to') != -1):
                                 req = urllib2.Request(url)
                                 req.add_header('User-Agent', user_agent)
@@ -85,6 +86,15 @@ def TVCHANNELS(xml):
                                 link = response.read()
                                 response.close()
                                 rtmp = re.compile('\'file\': \'(.+?)\'').findall(link)[0]
+                                try:
+                                        epg_title = re.compile('<center><font color=\'black\' size=\'4\' face=\'Jockey One\'>(.+?)<br>').findall(link)
+                                        epg_time = re.compile('von (.+?) bis (.+?)</font><br>').findall(link)
+                                        if (len(epg_title) > 0 and len(epg_time) > 0):
+                                                epg = epg_title[0]+" "+epg_time[0][0]+" - "+epg_time[0][1]
+                                        else:
+                                                epg = get_epg(channel.attributes['epg'].value.encode("utf-8"))
+                                except:
+                                        epg = ''
                         else:
                                 rtmp = url
                         thumbnail = addon.getAddonInfo('path')+'/resources/media/'+name.lower()+'.jpg'
