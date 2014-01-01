@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<channels>
+    <channel
+        name="KISS TV"
+        url="http://live-tv.to/television_channels/119"
+        epg="">
+    </channel>
+    <channel
+        name="TELERED 21"
+        url="http://live-tv.to/television_channels/120"
+        epg="">
+    </channel>
+    <channel
+        name="EUROSPORT"
+        url="http://live-tv.to/television_channels/124"
+        epg="">
+    </channel>
+    <channel
+        name="CBL CLASSIC HD"
+        url="http://live-tv.to/television_channels/123"
+        epg="">
+    </channel>
+    <channel
+        name="ANDALUCIA TELEVISION"
+        url="http://live-tv.to/television_channels/121"
+        epg="">
+    </channel>
+    <channel
+        name="TELEMADRID SAT"
+        url="http://live-tv.to/television_channels/118"
+        epg="">
+    </channel>
+    <channel
+        name="TVES"
+        url="http://live-tv.to/television_channels/125"
+        epg="">
+    </channel>
+    <channel
+        name="IB3"
+        url="http://live-tv.to/television_channels/117"
+        epg="">
+    </channel>
+</channels>
+</data>

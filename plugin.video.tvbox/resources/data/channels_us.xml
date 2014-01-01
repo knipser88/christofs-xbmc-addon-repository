@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<channels>
+    <channel
+        name="MTV"
+        url="http://live-tv.to/television_channels/108"
+        epg="">
+    </channel>
+    <channel
+        name="REDBULLTV"
+        url="http://live-tv.to/television_channels/94"
+        epg="">
+    </channel>
+    <channel
+        name="5USA+1"
+        url="http://live-tv.to/television_channels/111"
+        epg="">
+    </channel>
+    <channel
+        name="CBS REALITY"
+        url="http://live-tv.to/television_channels/110"
+        epg="">
+    </channel>
+    <channel
+        name="CBS DRAMA"
+        url="http://live-tv.to/television_channels/109"
+        epg="">
+    </channel>
+</channels>
+</data>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<channels>
+    <channel
+        name="RTP1"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=rtp swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=rtp&amp;width=768&amp;height=432 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/RTP1/">
+    </channel>
+    <channel
+        name="RTP2"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=rtp2 swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=rtp2&amp;width=768&amp;height=432 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/RTP2/">
+    </channel>
+    <channel
+        name="SIC NOTICIAS"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=sicnoticias swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=sicnoticias&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SICN/">
+    </channel>
+    <channel
+        name="SIC MULHER"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=sicmulher swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=sicmulher&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SICM/">
+    </channel>
+    <channel
+        name="SIC RADICAL"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=sicradical swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=sicradical&amp;width=768&amp;height=432 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SICR/">
+    </channel>
+    <channel
+        name="TVI FICCAO"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=tvificcao swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=tvificcao&amp;width=768&amp;height=432 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/TVIFIC/">
+    </channel>
+    <channel
+        name="BENFICA TV"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=benficatv swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=fbenficatv&amp;width=670&amp;height=450 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SLB/">
+    </channel>
+    <channel
+        name="PORTO CANAL"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=portocanal swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=portocanal&amp;width=670&amp;height=450 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/PORTO/">
+    </channel>
+    <channel
+        name="DISNEY CHANNEL"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=disney swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=disney&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/DISNY/">
+    </channel>
+    <channel
+        name="CANAL HOLLYWOOD"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=hollywood swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=hollywood&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/HOLLW/">
+    </channel>
+    <channel
+        name="AXN"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=axn swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=axn&amp;width=768&amp;height=432 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/AXN/">
+    </channel>
+    <channel
+        name="AXN BLACK"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=axnblack swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=axnblack&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/AXNBL/">
+    </channel>
+    <channel
+        name="AXN WHITE"
+        url="rrtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=axnwhite swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=axnwhite&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/AXNWH/">
+    </channel>
+    <channel
+        name="SYFY"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=syfy swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=syfy&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SYFY/">
+    </channel>
+    <channel
+        name="FOX"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=fox swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=fox&amp;width=768&amp;height=432 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/FOX/">
+    </channel>
+    <channel
+        name="FOX CRIME"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=foxcrime swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=foxcrime&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/FOXCR/">
+    </channel>
+    <channel
+        name="FOX MOVIES"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=foxmovies swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=foxmovies&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/FOXM/">
+    </channel>
+    <channel
+        name="MTV PORTUGAL"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=mtv swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=mtv&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/MTV/">
+    </channel>
+    <channel
+        name="VH1"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=vh1 swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=vh1&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/VH1/">
+    </channel>
+    <channel
+        name="DISCOVERY CHANNEL"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=discovery swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=discovery&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/DISCV/">
+    </channel>
+    <channel
+        name="HISTORIA"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=historia swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=historia&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="portalnacional.com.pt/util/tv/HIST/">
+    </channel>
+    <channel
+        name="NATIONAL GEOGRAPHIC"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=nationalgeographic swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=nationalgeographic&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/NGC/">
+    </channel>
+    <channel
+        name="EURONEWS"
+        url="http://akamedia10.lsops.net/live/smil:euronews_pt.smil/playlist.m3u8"
+        epg="http://portalnacional.com.pt/util/tv/EURN/">
+    </channel>
+    <channel
+        name="SPORT TV 1"
+        url="rtmp://159.253.143.7/live playpath=185212 swfurl=http://www.udemy.com/static/flash/player5.9.swf pageurl=http://castalba.tv/embed.php?cid=13551&amp;wh=650&amp;ht=500&amp;r=www.zuuk.net live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SPTV1/">
+    </channel>
+    <channel
+        name="SPORT TV 4"
+        url="rtmp://401253380.e.293064559.r.cdn77.net/293064559/ playpath=sporttv4 swfurl=http://www.cdn77.com/jwplayer/player.swf pageurl=http://www.zuuk.net/el.php?ch=sporttv4&amp;width=650&amp;height=500 live=true swfvfy=true"
+        epg="http://portalnacional.com.pt/util/tv/SPTV4/">
+    </channel>
+</channels>
+</data>

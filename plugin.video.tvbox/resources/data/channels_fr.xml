@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<channels>
+    <channel
+        name="FRANCE2"
+        url="http://www.tv-kino.net/stream/live/fr/france2.html"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=57">
+    </channel>
+    <channel
+        name="FRANCE3"
+        url="http://www.tv-kino.net/stream/live/fr/france3.html"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=58">
+    </channel>
+    <channel
+        name="FRANCE5"
+        url="http://www.tv-kino.net/stream/live/fr/france5.html"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=80">
+    </channel>
+    <channel
+        name="FRANCE24 FRANCAIS"
+        url="http://livestation_hls-lh.akamaihd.net/i/france24_fr@105461/master.m3u8"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=147">
+    </channel>
+    <channel
+        name="EURONEWS"
+        url="http://hd1.lsops.net/live/smil:euronews_fr.smil/playlist.m3u8"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=196">
+    </channel>
+    <channel
+        name="GULLI"
+        url="http://live-tv.to/television_channels/113"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=270">
+    </channel>
+    <channel
+        name="GRANDLILLE"
+        url="http://live-tv.to/television_channels/115"
+        epg="">
+    </channel>
+    <channel
+        name="ALSACE20"
+        url="http://live-tv.to/television_channels/114"
+        epg="">
+    </channel>
+    <channel
+        name="AIR"
+        url="http://live-tv.to/television_channels/116"
+        epg="">
+    </channel>
+</channels>
+</data>

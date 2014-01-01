@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<countries>
+    <country
+        name="AUSTRIA"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_at.xml"
+        timestamp="20/07/2013 21:44:00">
+    </country>
+    <country
+        name="GERMANY"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_de.xml"
+        timestamp="01/01/2014 14:58:00">
+    </country>
+    <country
+        name="FRANCE"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_fr.xml"
+        timestamp="20/07/2013 22:33:00">
+    </country>
+    <country
+        name="LUXEMBOURG"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_lu.xml"
+        timestamp="17/04/2013 00:00:00">
+    </country>
+    <country
+        name="PORTUGAL"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_pt.xml"
+        timestamp="17/04/2013 00:00:00">
+    </country>
+    <country
+        name="SPAIN"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_es.xml"
+        timestamp="22/07/2013 14:02:00">
+    </country>
+    <country
+        name="SWITZERLAND"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_ch.xml"
+        timestamp="20/07/2013 22:36:00">
+    </country>
+    <country
+        name="UNITED KINGDOM"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_uk.xml"
+        timestamp="20/07/2013 23:54:00">
+    </country>
+    <country
+        name="UNITED STATES OF AMERICA"
+        xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_us.xml"
+        timestamp="21/07/2013 00:17:00">
+    </country>
+</countries>
+</data>
