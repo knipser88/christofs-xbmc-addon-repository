@@ -3,27 +3,27 @@
 <channels>
     <channel
         name="ARD"
-        url="http://www.tv-kino.net/stream/live/de/ard.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-ard.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=1">
     </channel>
     <channel
         name="ZDF"
-        url="http://www.tv-kino.net/stream/live/de/zdf-hd.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-zdf.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=2">
     </channel>
     <channel
         name="SAT1"
-        url="http://www.tv-kino.net/stream/live/de/sat1.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-sat1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=10">
     </channel>
     <channel
         name="RTL"
-        url="http://www.tv-kino.net/stream/live/de/rtl.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-rtl.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=8">
     </channel>
     <channel
         name="RTL2"
-        url="http://www.tv-kino.net/stream/live/de/rtl2.html"
+        url="http://megatv.to/Live-Stream/allgemein/ios-rtl2.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=23">
     </channel>
     <channel
@@ -33,32 +33,37 @@
     </channel>
     <channel
         name="KABEL1"
-        url="http://www.tv-kino.net/stream/live/de/kabel1.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-kabel1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=26">
     </channel>
     <channel
         name="VOX"
-        url="http://www.tv-kino.net/stream/live/de/vox.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-vox.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=25">
     </channel>
     <channel
         name="SIXX"
-        url="http://www.tv-kino.net/stream/live/de/sixx.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-sixx.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=259">
     </channel>
     <channel
         name="DMAX"
-        url="http://www.tv-kino.net/stream/live/de/dmax.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-dmax.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=154">
     </channel>
     <channel
+        name="PRO7 MAXX"
+        url="http://megatv.to/Live-Stream/deutschland/ios-pro-sieben-maxx.html"
+        epg="">
+    </channel>
+    <channel
         name="SUPERRTL"
-        url="http://www.tv-kino.net/stream/live/de/superrtl.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-super-rtl.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=294">
     </channel>
     <channel
         name="RTL NITRO"
-        url="http://live-tv.to/television_channels/112"
+        url="http://megatv.to/Live-Stream/deutschland/ios-rtl-nitro.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=289">
     </channel>
     <channel
@@ -68,37 +73,37 @@
     </channel>
     <channel
         name="3SAT"
-        url="http://www.tv-kino.net/stream/live/de/3sat.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-3sat.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=11">
     </channel>
     <channel
         name="EUROSPORT"
-        url="http://www.tv-kino.net/stream/live/de/eurosport.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-eurosport.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=35">
     </channel>
     <channel
         name="SPORT1"
-        url="http://www.tv-kino.net/stream/live/de/sport1.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-sport-1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=36">
     </channel>
     <channel
-        name="NICKCC"
-        url="http://www.tv-kino.net/stream/live/de/nickcc.html"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=141">
+        name="NICKELODEON"
+        url="http://megatv.to/Live-Stream/deutschland/ios-nickeldeon.html"
+        epg="">
     </channel>
     <channel
         name="KIKA"
-        url="http://www.tv-kino.net/stream/live/de/kika.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-kika-2.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=43">
     </channel>
     <channel
         name="ARTE"
-        url="http://www.tv-kino.net/stream/live/de/arte.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-arte.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=24">
     </channel>
     <channel
         name="VIVA"
-        url="http://www.tv-kino.net/stream/live/de/viva.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-viva.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=70">
     </channel>
     <channel
@@ -108,7 +113,7 @@
     </channel>
     <channel
         name="WDR"
-        url="http://live-tv.to/television_channels/19"
+        url="http://megatv.to/Live-Stream/deutschland/ios-ndr.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=30">
     </channel>
     <channel
@@ -118,7 +123,7 @@
     </channel>
     <channel
         name="SWR"
-        url="http://live-tv.to/television_channels/30"
+        url="http://megatv.to/Live-Stream/deutschland/ios-swr.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=29">
     </channel>
     <channel
@@ -128,12 +133,12 @@
     </channel>
     <channel
         name="N24"
-        url="http://www.tv-kino.net/stream/live/de/n24.html"
+        url="http://megatv.to/Live-Stream/deutschland/n24.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=44">
     </channel>
     <channel
         name="NTV"
-        url="http://www.tv-kino.net/stream/live/de/ntv.html"
+        url="http://megatv.to/Live-Stream/deutschland/ios-n-tv.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=38">
     </channel>
     <channel
