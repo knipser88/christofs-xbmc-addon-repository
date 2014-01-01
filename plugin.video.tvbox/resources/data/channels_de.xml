@@ -152,6 +152,16 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=121">
     </channel>
     <channel
+        name="ZDFKULTUR"
+        url="http://megatv.to/Live-Stream/deutschland/zdf-kultur.html"
+        epg="">
+    </channel>
+    <channel
+        name="ZDFINFO"
+        url="http://megatv.to/Live-Stream/deutschland/zdf-info.html"
+        epg="">
+    </channel>
+    <channel
         name="DAS VIERTE"
         url="http://megatv.to/Live-Stream/deutschland/ios-das-vierte.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=145">
