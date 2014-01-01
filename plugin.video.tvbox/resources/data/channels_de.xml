@@ -2,7 +2,7 @@
 <data>
 <channels>
     <channel
-        name="ARD"
+        name="DAS ERSTE"
         url="http://megatv.to/Live-Stream/deutschland/ios-ard.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=1">
     </channel>
@@ -12,7 +12,7 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=2">
     </channel>
     <channel
-        name="SAT1"
+        name="SAT.1"
         url="http://megatv.to/Live-Stream/deutschland/ios-sat1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=10">
     </channel>
@@ -22,7 +22,7 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=8">
     </channel>
     <channel
-        name="RTL2"
+        name="RTL 2"
         url="http://megatv.to/Live-Stream/allgemein/ios-rtl2.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=23">
     </channel>
@@ -32,7 +32,7 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=9">
     </channel>
     <channel
-        name="KABEL1"
+        name="KABEL 1"
         url="http://megatv.to/Live-Stream/deutschland/ios-kabel1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=26">
     </channel>
@@ -62,7 +62,7 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=294">
     </channel>
     <channel
-        name="RTL NITRO"
+        name="RTLNITRO"
         url="http://megatv.to/Live-Stream/deutschland/ios-rtl-nitro.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=289">
     </channel>
@@ -147,12 +147,12 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=67">
     </channel>
     <channel
-        name="ZDFNEO"
+        name="ZDF_NEO"
         url="http://megatv.to/Live-Stream/deutschland/ios-zdf-neo.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=121">
     </channel>
     <channel
-        name="ZDFKULTUR"
+        name="ZDF.KULTUR"
         url="http://megatv.to/Live-Stream/deutschland/zdf-kultur.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=280">
     </channel>
