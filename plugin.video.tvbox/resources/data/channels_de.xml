@@ -143,28 +143,23 @@
     </channel>
     <channel
         name="EURONEWS"
-        url="http://hd1.lsops.net/live/smil:euronews_de.smil/playlist.m3u8"
+        url="http://megatv.to/Live-Stream/deutschland/ios-euronews.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=67">
     </channel>
     <channel
         name="ZDFNEO"
-        url="http://live-tv.to/television_channels/33"
+        url="http://megatv.to/Live-Stream/deutschland/ios-zdf-neo.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=121">
     </channel>
     <channel
         name="DAS VIERTE"
-        url="http://live-tv.to/television_channels/42"
+        url="http://megatv.to/Live-Stream/deutschland/ios-das-vierte.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=145">
     </channel>
     <channel
         name="PHOENIX"
-        url="http://live-tv.to/television_channels/43"
+        url="http://megatv.to/Live-Stream/deutschland/ios-phoenix.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=46">
-    </channel>
-    <channel
-        name="JOIZ"
-        url="http://live-tv.to/television_channels/34"
-        epg="http://i.teleboy.ch/programm/station.php?station_id=279">
     </channel>
     <channel
         name="ANIXE"
