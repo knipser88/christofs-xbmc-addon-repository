@@ -172,6 +172,11 @@
         epg="http://i.teleboy.ch/programm/station.php?station_id=46">
     </channel>
     <channel
+        name="BAYERISCHES FERNSEHEN"
+        url="http://megatv.to/Live-Stream/allgemein/br3.html"
+        epg="http://i.teleboy.ch/programm/station.php?station_id=27">
+    </channel>
+    <channel
         name="ANIXE"
         url="http://live-tv.to/television_channels/5"
         epg="http://i.teleboy.ch/programm/station.php?station_id=175">
