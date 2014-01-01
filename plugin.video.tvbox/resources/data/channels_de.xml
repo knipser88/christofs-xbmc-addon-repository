@@ -54,7 +54,7 @@
     <channel
         name="PRO7 MAXX"
         url="http://megatv.to/Live-Stream/deutschland/ios-pro-sieben-maxx.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=317">
     </channel>
     <channel
         name="SUPERRTL"
@@ -89,7 +89,7 @@
     <channel
         name="NICKELODEON"
         url="http://megatv.to/Live-Stream/deutschland/ios-nickeldeon.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=141">
     </channel>
     <channel
         name="KIKA"
@@ -154,12 +154,12 @@
     <channel
         name="ZDFKULTUR"
         url="http://megatv.to/Live-Stream/deutschland/zdf-kultur.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=280">
     </channel>
     <channel
         name="ZDFINFO"
         url="http://megatv.to/Live-Stream/deutschland/zdf-info.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=172">
     </channel>
     <channel
         name="DAS VIERTE"
