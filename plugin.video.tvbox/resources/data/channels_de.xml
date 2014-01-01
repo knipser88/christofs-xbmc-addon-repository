@@ -68,7 +68,7 @@
     </channel>
     <channel
         name="SAT1 GOLD"
-        url="http://www.tv-kino.net/stream/live/de/sat1gold.html"
+        url="http://www.live-stream.tv/online/fernsehen/sat1gold.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=301">
     </channel>
     <channel
@@ -118,7 +118,7 @@
     </channel>
     <channel
         name="MDR"
-        url="http://live-tv.to/television_channels/28"
+        url="http://www.live-stream.tv/online/fernsehen/mdr.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=31">
     </channel>
     <channel
@@ -128,7 +128,7 @@
     </channel>
     <channel
         name="NDR"
-        url="http://live-tv.to/television_channels/7"
+        url="http://www.live-stream.tv/online/fernsehen/ndr.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=28">
     </channel>
     <channel

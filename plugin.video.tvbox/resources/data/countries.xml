@@ -9,7 +9,11 @@
     <country
         name="GERMANY"
         xml="https://raw.github.com/ChristofTorres/christofs-xbmc-addon-repository/master/plugin.video.tvbox/resources/data/channels_de.xml"
+<<<<<<< HEAD
         timestamp="01/01/2014 14:58:00">
+=======
+        timestamp="01/01/2014 16:49:00">
+>>>>>>> 57b05e14f0803ab3630e2480da15611af8076501
     </country>
     <country
         name="FRANCE"
