@@ -39,7 +39,7 @@
     <channel
         name="JOIZ"
         url="http://megatv.to/Live-Stream/allgemein/joiz-2.html"
-        epg="">
+        epg="http://i.teleboy.ch/programm/station.php?station_id=279">
     </channel>
 </channels>
 </data>
