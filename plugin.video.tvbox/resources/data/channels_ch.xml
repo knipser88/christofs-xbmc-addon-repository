@@ -36,5 +36,10 @@
         url="http://live-tv.to/television_channels/29"
         epg="http://i.teleboy.ch/programm/station.php?station_id=72">
     </channel>
+    <channel
+        name="JOIZ"
+        url="http://megatv.to/Live-Stream/allgemein/joiz-2.html"
+        epg="">
+    </channel>
 </channels>
 </data>
