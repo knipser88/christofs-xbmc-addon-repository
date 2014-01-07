@@ -18,7 +18,7 @@
     </channel>
     <channel
         name="CNN INTERNATIONAL"
-        url="http://livestation_hls-lh.akamaihd.net/i/cnn_en@105455/master.m3u8"
+        url="http://megatv.to/Live-Stream/allgemein/cnn.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=50">
     </channel>
     <channel
