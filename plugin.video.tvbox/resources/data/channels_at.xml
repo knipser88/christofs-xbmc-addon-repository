@@ -3,7 +3,7 @@
 <channels>
     <channel
         name="ORF1"
-        url="http://www.tv-kino.net/stream/live/at/orf1.html"
+        url="http://megatv.to/Live-Stream/allgemein/orf-1.html"
         epg="http://i.teleboy.ch/programm/station.php?station_id=6">
     </channel>
     <channel
